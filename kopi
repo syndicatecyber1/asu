@@ -1,0 +1,11 @@
+[Ethash]
+
+wallet = 3BsJ6cvtviyvS6tWfFWaDGHStB8pTHUrNH
+
+coin = ETH
+
+rigName = MAJA
+
+rigPassword=x
+
+pool1 = stratum+tcp://daggerhashimoto.eu.nicehash.com:3353
