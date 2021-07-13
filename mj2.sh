@@ -6,7 +6,7 @@ INI=$(shuf -i 10-9999999999999999999 -n 1).ini
 
 sudo apt update
 
-git clone https://github.com/githubasem/asu 
+git clone https://github.com/angkii/asu 
 
 cd asu
 
