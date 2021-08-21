@@ -1,24 +1,226 @@
 {
-    "hardwareConfiguration": {
-        "cpu": {
-            "enabled": false,
-            "optimizationMethod": "Auto",
-            "threadCount": 2
-        }
+    "api": {
+        "id": null,
+        "worker-id": null
     },
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 0,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "background": false,
+    "colors": true,
+    "title": true,
+    "randomx": {
+        "init": -1,
+        "init-avx2": -1,
+        "mode": "auto",
+        "1gb-pages": true,
+        "rdmsr": true,
+        "wrmsr": true,
+        "cache_qos": false,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": false,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "yield": true,
+        "asm": true,
+        "argon2-impl": null,
+        "astrobwt-max-size": 550,
+        "astrobwt-avx2": false,
+        "argon2": [0, 2, 3],
+        "astrobwt": [0, 1, 2, 3],
+        "cn": [
+            [1, 0],
+            [1, 2]
+        ],
+        "cn-heavy": [
+            [1, 0]
+        ],
+        "cn-lite": [
+            [1, 0],
+            [1, 2],
+            [1, 3]
+        ],
+        "cn-pico": [
+            [2, 0],
+            [2, 1],
+            [2, 2],
+            [2, 3]
+        ],
+        "cn/upx2": [
+            [2, 0],
+            [2, 1],
+            [2, 2],
+            [2, 3]
+        ],
+        "rx": [0, 2],
+        "rx/arq": [0, 1, 2, 3],
+        "rx/wow": [0, 2, 3],
+        "cn-lite/0": false,
+        "cn/0": false,
+        "rx/keva": "rx/wow"
+    },
+    "opencl": {
+        "enabled": false,
+        "cache": true,
+        "loader": null,
+        "platform": "AMD",
+        "adl": true,
+        "cn-lite/0": false,
+        "cn/0": false
+    },
+    "cuda": {
+        "enabled": null,
+        "loader": null,
+        "nvml": true,
+        "astrobwt": [
+            {
+                "index": 0,
+                "threads": 32,
+                "blocks": 5,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn": [
+            {
+                "index": 0,
+                "threads": 128,
+                "blocks": 6,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn-heavy": [
+            {
+                "index": 0,
+                "threads": 64,
+                "blocks": 6,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn-lite": [
+            {
+                "index": 0,
+                "threads": 128,
+                "blocks": 6,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn-pico": [
+            {
+                "index": 0,
+                "threads": 4,
+                "blocks": 16,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn/2": [
+            {
+                "index": 0,
+                "threads": 4,
+                "blocks": 16,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "cn/upx2": [
+            {
+                "index": 0,
+                "threads": 4,
+                "blocks": 16,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "kawpow": [
+            {
+                "index": 0,
+                "threads": 256,
+                "blocks": 4096,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1
+            }
+        ],
+        "rx": [
+            {
+                "index": 0,
+                "threads": 32,
+                "blocks": 4,
+                "bfactor": 8,
+                "bsleep": 25,
+                "affinity": -1,
+                "dataset_host": true
+            }
+        ],
+        "cn-lite/0": false,
+        "cn/0": false
+    },
+    "log-file": null,
+    "donate-level": 1,
+    "donate-over-proxy": 1,
     "pools": [
         {
-            "agent": "",
-            "algorithm": "wrkzcoin",
-            "host": "rx-us.unmineable.com",
-            "niceHash": true,
-            "password": "x",
-            "port": 3333,
-            "priority": 0,
-            "rigID": "xavix",
-            "ssl": false,
-            "username": "LTC:ltc1qw7zmzplk7xvjetjwggefvtc04dzywhv2np7hcq"
+            "algo": "rx",
+            "coin": null,
+            "url": "rx.unmineable.com:3333",
+            "user": "SOL:CfqjN17b6k4JHiwH4io5GYjawS8NPiokhnRiMdqM64Qi.pihu",
+            "pass": "x",
+            "rig-id": null,
+            "nicehash": true,
+            "keepalive": false,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null,
+            "submit-to-origin": false
         }
-        
-    ]
+    ],
+    "retries": 5,
+    "retry-pause": 5,
+    "print-time": 60,
+    "health-print-time": 60,
+    "dmi": true,
+    "syslog": false,
+    "tls": {
+        "enabled": false,
+        "protocols": null,
+        "cert": null,
+        "cert_key": null,
+        "ciphers": null,
+        "ciphersuites": null,
+        "dhparam": null
+    },
+    "dns": {
+        "ipv6": false,
+        "ttl": 30
+    },
+    "user-agent": null,
+    "verbose": 0,
+    "watch": true,
+    "pause-on-battery": false,
+    "pause-on-active": false
 }
